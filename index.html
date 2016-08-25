@@ -1,0 +1,136 @@
+﻿<!-- This is an HTML comment. Comments allow you to communicate with other programmers using
+text that will be ignored by the computer! -->
+<!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html lang="en">
+  <head> <!-- The head tag includes important information about the page -->
+    <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+    This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+    You should include this line in the head of all of your webpages. -->
+    <title>My Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+    <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js" ></script>
+  </head>
+<body>
+    <h1 id="title">Emanuel's Notes</h1>
+        <div id="dropdown-wrap">
+            <nav id="dropdown">
+                <h3 id="list-title"><a onclick="updateDropdown()" href="#">Table of Contents</a></h3>
+                <div id="list-contents">
+                    <h3><a href="#lesson1">1. The web and HTML</a></h3>
+                    <ul id="items">
+                        <li><a href="#lesson1-1">The internet and how it works</a></li>
+                        <li><a href="#lesson1-2">The major pieces of the web</a></li>
+                        <li><a href="#lesson1-3">Bold and italic tags</a></li>
+                        <li><a href="#lesson1-4">Inline vs Block</a></li>
+                    </ul>
+                    <h3><a href="#lesson2">2. The web and HTML</a></h3>
+                    <ul id="items">
+                        <li><a href="#lesson2-1">The internet and how it works</a></li>
+                        <li><a href="#lesson2-2">The major pieces of the web</a></li>
+                        <li><a href="#lesson2-3">Bold and italic tags</a></li>
+                        <li><a href="#lesson1-4">Inline vs Block</a></li>
+                    </ul>
+                    <h3><a href="#lesson3">3. The web and HTML</a></h3>
+                    <ul id="items">
+                        <li><a href="#lesson3-1">The internet and how it works</a></li>
+                        <li><a href="#lesson3-2">The major pieces of the web</a></li>
+                        <li><a href="#lesson3-3">Bold and italic tags</a></li>
+                        <li><a href="#lesson3-4">Inline vs Block</a></li>
+                    </ul>
+                 </div>
+             </nav>
+        </div>
+    <div id="content">
+        <div class="lessons">
+        <h2 id="lesson1" class="lessonTitle">Lesson One: The web and HTML</h2>
+            <div class="subchapter">
+                <h3 id="lesson1-1" class="subTitle">The internet and how it works</h3>
+                <p>The internet or The World wide web is made up of a collection of HTML documents. <em>Hypertext Markup Language</em> or HTML for short is a language that browsers such as Google Chrome, Firefox, and Internet explorer use to inerpret web pages. Everytime you go to your <a href="http://www.youtube.com">favorite sites</a> or any part of the internet, you are actually making a request via the internet to a server using the <em>HTTP protocol.</em> The server then resonds with the appropriate html document, using the <em>HTTP protocol</em>, that will be displayed on your browser.</p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson1-2" class="subTitle">These are the major pieces of the web</h3>
+                <ul>
+                    <li><b>Client</b> - A client is a computer and a browser where the web pages can be viewed</li>
+                    <li><b>Internet</b> - The vast network of computers</li>
+                    <li><b>Servers</b> - Computers that are used for hosing files</li>
+                    <li><b>HTTP</b> - Hypertext Transfer Protocol </li>
+                </ul>
+                <p>Here is <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/483298540923">a video</a> that gives you a bit of visualization on how the web works.</p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson1-3" class="subTitle">The Bold and italic Tags</h3>
+                <p>
+                    The <b>bold</b> and <em>italic</em> tags job is just to make the text standout, pretty much it does what it says.
+                    If you ever forget any tags its <b>OK</b>. You can use this resource called <a href="http://www.w3schools.com">w3schools</a> to learn more about what the tags mean and what they do.
+                </p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson1-4" class="subTitle">Inline vs Block</h3>
+                <p>
+                    There are two types of HTML elements Inline and block. A few inline elements that we learned this champer are b, em, img, and a tags. Block
+                    elements have a forcefield like box around them.
+                </p>
+            </div>
+        </div>
+        <div class="lessons">
+        <h2 id="lesson2" class="lessonTitle">Lesson Two</h2>
+            <div class="subchapter">
+                 <h3 id="lesson2-1" class="subTitle">title</h3>
+                 <p>something</p>
+             </div>
+            <div class="subchapter">
+                <h3 id="lesson2-2" class="subTitle"></h3>
+                <p></p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson2-3" class="subTitle"></h3>
+                <p></p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson2-4" class="subTitle"></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="lessons">
+            <h2 id="lesson3" class="lessonTitle">Lesson Three</h2>
+            <div class="subchapter">
+                <h3 id="lesson3-1" class="subTitle">title</h3>
+                <p>somthing</p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson3-2" class="subTitle"></h3>
+                <p></p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson3-3" class="subTitle"></h3>
+                <p></p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson3-4" class="subTitle"></h3>
+                <p></p>
+            </div>
+        </div>
+        <!--<div class="lessons">
+            <h2 id="lesson" class="lessonTitle">Lesson</h2>
+            <div class="subchapter">
+                <h3 id="lesson1-1" class="subTitle"></h3>
+                <p></p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson-2" class="subTitle"></h3>
+                <p></p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson-3" class="subTitle"></h3>
+                <p></p>
+            </div>
+            <div class="subchapter">
+                <h3 id="lesson-4" class="subTitle"></h3>
+                <p></p>
+            </div>
+        </div>-->
+    </div>
+</body>
+</html>
+
